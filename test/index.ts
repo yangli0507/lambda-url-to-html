@@ -41,7 +41,7 @@ describe("handler", () => {
         strictEqual(result?.s3_url, s3_url);
     });
 
-    it.skip ("should extract and return the page title of an url", async () => {
+    it ("should extract and return the page title of an url", async () => {
         const name = '__file_name__';
         const html = `<html><head><title>${title}</title></head><body></body></html>`;
 

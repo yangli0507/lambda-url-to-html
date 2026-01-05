@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "deploy": "lambda-build upload lambda-url-to-html -r us-east-1",
-    "test": "mocha --recursive 'test' --extension ts --exist --require esbuild-register --timeout 2000"
+    "test": "mocha --recursive 'test' --extension ts --require esbuild-register"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.159",
@@ -20,9 +20,7 @@
     "sinon": "^21.0.1"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.962.0",
     "axios": "^1.13.2",
-    "cheerio": "^1.1.2",
-    "install": "^0.13.0"
+    "cheerio": "^1.1.2"
   }
 }
