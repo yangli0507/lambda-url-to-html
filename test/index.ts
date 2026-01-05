@@ -1,9 +1,8 @@
 import { describe, it, afterEach} from "mocha";
-import { handler, Input, Output, storage, storeToS3 } from "../index";
+import { handler, Input, Output, storage} from "../index";
 import { stub, restore } from "sinon";
 import axios from "axios";
 import { strictEqual } from "node:assert";
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 
 
 
